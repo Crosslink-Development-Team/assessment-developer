@@ -84,6 +84,7 @@ To assess the candidate's ability to design and implement an AWS API Gateway tha
 3. **Code Quality:**
    - Is the code for Lambda functions clean, well-structured, and documented?
    - Are best practices followed in CloudFormation scripting?
+   - This code will be evaluated as if it were going into production. Before submitting the code, re-evaluate it as if you were doing the pull request on it, then correct those problem.
 
 4. **Creativity and Problem Solving:**
    - Are the external services chosen for the Lambda functions meaningful and relevant?
