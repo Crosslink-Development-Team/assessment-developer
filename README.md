@@ -16,7 +16,8 @@ To assess the candidate's ability to design and implement an AWS API Gateway tha
 
 2. **Lambda Functions:**
    - Develop two AWS **Lambda functions**. Each function should:
-     - Call an **external service** of your choice. The services can be any publicly accessible APIs (e.g., weather API, stock market API, etc.).
+     - Call an **external service** of your choice. The services can be any publicly accessible APIs.
+     - At least one of the external services must require **authentication** (e.g., an API key). A free-tier API such as [OpenWeatherMap](https://openweathermap.org/api) is acceptable.
      - Process the response from the external service and return a meaningful output to the API Gateway.
    
 3. **Infrastructure as Code:**
@@ -56,7 +57,7 @@ To assess the candidate's ability to design and implement an AWS API Gateway tha
      │   ├── main.yaml - Main CloudFormation script
      ├── lambdas
      │   ├── lambda1
-     │   │   └── index.mjs - First Lambda function
+     │   │   └── index.ts - First Lambda function
      │   ├── lambda2
      │   │   └── lambda_function.py - Second Lambda function
      └── assets (if any)
@@ -97,11 +98,12 @@ To assess the candidate's ability to design and implement an AWS API Gateway tha
 
 ### **Additional Notes:**
 
-- The candidate must use Node.js for one Lambda and Python for the other.
-- The code should be production level code and not a "prove of concept".
+- The candidate must use TypeScript for one Lambda and Python for the other.
+- The code should be production level code and not a "proof of concept".
 - Using AWS Free Tier eligible services to minimize any costs.
 - The candidate should complete the assessment within 6- 10 Calendar days.
-- Do not fork this repository
-- Create a new repository with your solution
+- The repository's commit history should reflect a clear development process.
+- Do not fork this repository.
+- Create a new repository with your solution.
 
 ---
